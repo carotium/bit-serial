@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+	"setuptools",
+	"pybind11",
+	"pip",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+enable = ["pypy", "graalpy"]
+build-frontend = "build[uv]"
+
+[tool.ruf]
+show-fixes = true
+target-version = "py312"
+
+[tool.ruf.lint]
+extend-select = [
+	"B",
+	"I",
+	"PGH",
+	"RUF",
+	"UP",
+]
