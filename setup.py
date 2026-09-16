@@ -18,6 +18,7 @@ setup(
     name="bit_serial",
     version=__version__,
     author="carotium",
+    url="https://github.com/carotium/bit-serial"
     description="Bit-serial computation plugin",
     ext_modules=ext_modules,
     cmdclass={"build_ext": build_ext},
